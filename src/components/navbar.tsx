@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const navbar = () => {
   const navItems = [
@@ -27,9 +28,12 @@ const navbar = () => {
               </svg>
             </button>
           </div>
-          <div className="flex flex-1 flex-col items-center justify-center items-center gap-4">
-            <Image className="h-8 w-auto" src='/logo.png' width={100} height={20} alt='logo' />
-            <div className="hidden sm:ml-6 sm:block">
+          <div className="flex flex-1 flex-col items-center justify-center items-center gap-4 w-100 relative" >
+            <div className='flex align-center justify-center w-6/12 relative'>
+              <Link href='/faq' className='absolute left-0 rounded-md px-3 py-2 text-sm font-medium text-gray-500 uppercase hover:bg-gray-700 hover:text-white' >FAQs</Link>
+              <Image className="h-8 w-auto" src='/logo.png' width={100} height={20} alt='logo' />
+            </div>
+            <div className="hidden sm:block">
               <div className="flex space-x-4">
                 {navItems.map(nav => (<a href={nav.route} className={nav.className} key={nav.label}>{nav.label}</a>))}
               </div>
