@@ -1,7 +1,7 @@
 import React from 'react'
 import { accomodations } from '../../../data'
-import ImageGallery from '../../../components/ImageGallery.tsx'
-import YouMayAlsoLike from '../../../components/YouMayAlsoLikeCard.tsx'
+import ImageGallery from '../../../components/ImageGallery'
+import YouMayAlsoLike from '../../../components/YouMayAlsoLikeCard'
 
 const page = ({ params }: any) => {
   const { name, category = "Hotel",  manager } = accomodations.find(item=>item.id===params.id);
