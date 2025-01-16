@@ -1,10 +1,14 @@
 "use client"
 
 import { useState } from 'react';
-import { accomodations } from '../data.js'
+import { accomodations,transportation } from '../data.js'
 import Link from 'next/link.js';
 
-function getRandomValues(arr, numValues) {
+function getRandomValues(type, numValues) {
+let arr = accomodations;
+  if(type==='accomodations') arr = accomodations;
+  else if (type==='transportation') arr = transportation;
+
   if (numValues > arr.length) {
     throw new Error("The number of values to select cannot exceed the array length.");
   }
@@ -36,9 +40,9 @@ const Card = ({ id, placeholder, name, price, description, manager }) => {
   )
 }
 
-export default function YouMayAlsoLike() {
+export default function YouMayAlsoLike({type}) {
 
-  const [items, _] = useState(getRandomValues(accomodations, 4));
+  const [items, _] = useState(getRandomValues(type, 4));
   return (
     <section className="px-8 py-8">
       <hr className="my-6" />
