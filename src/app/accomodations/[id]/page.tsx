@@ -34,7 +34,7 @@ const page = ({ params }: any) => {
       </p>
       <div className="text-2xl font-bold bg-gray-200 w-fit px-4 py-2">$120/night</div>
     </section>
-      <YouMayAlsoLike />
+      <YouMayAlsoLike type="accomodations" />
     </div>
   )
 }
