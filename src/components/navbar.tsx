@@ -10,7 +10,7 @@ const navbar = () => {
     { className: "rounded-md px-3 py-2 text-sm font-medium text-gray-300 uppercase hover:bg-gray-700 hover:text-white", route: "/contact", label: "CONTACT" }
   ]
   return (
-    <nav className="w-100">
+    <nav className="w-100 mt-10">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
