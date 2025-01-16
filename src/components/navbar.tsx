@@ -3,14 +3,14 @@ import Image from 'next/image'
 
 const navbar = () => {
   const navItems = [
-    { className: "rounded-md px-3 py-2 text-sm font-medium text-gray-300 uppercase hover:bg-gray-700 hover:text-white", route: "/", label: "HOME" },
-    { className: "rounded-md px-3 py-2 text-sm font-medium text-gray-300 uppercase hover:bg-gray-700 hover:text-white", route: "/accomodations", label: "ACCOMODATION" },
-    { className: "rounded-md px-3 py-2 text-sm font-medium text-gray-300 uppercase hover:bg-gray-700 hover:text-white", route: "/transportations", label: "TRANSPORTATIOIN" },
-    { className: "rounded-md px-3 py-2 text-sm font-medium text-gray-300 uppercase hover:bg-gray-700 hover:text-white", route: "tours", label: "TOURS" },
-    { className: "rounded-md px-3 py-2 text-sm font-medium text-gray-300 uppercase hover:bg-gray-700 hover:text-white", route: "/contact", label: "CONTACT" }
+    { className: "rounded-md px-3 py-2 text-sm font-medium text-gray-500 uppercase hover:bg-gray-700 hover:text-white", route: "/", label: "HOME" },
+    { className: "rounded-md px-3 py-2 text-sm font-medium text-gray-500 uppercase hover:bg-gray-700 hover:text-white", route: "/accomodations", label: "ACCOMODATION" },
+    { className: "rounded-md px-3 py-2 text-sm font-medium text-gray-500 uppercase hover:bg-gray-700 hover:text-white", route: "/transportations", label: "TRANSPORTATIOIN" },
+    { className: "rounded-md px-3 py-2 text-sm font-medium text-gray-500 uppercase hover:bg-gray-700 hover:text-white", route: "tours", label: "TOURS" },
+    { className: "rounded-md px-3 py-2 text-sm font-medium text-gray-500 uppercase hover:bg-gray-700 hover:text-white", route: "/contact", label: "CONTACT" }
   ]
   return (
-    <nav className="w-100 mt-10">
+    <nav className="w-100 my-10">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -28,7 +28,7 @@ const navbar = () => {
             </button>
           </div>
           <div className="flex flex-1 flex-col items-center justify-center items-center gap-4">
-            <Image className="h-8 w-auto" src='/LOGO.png' width={100} height={20} alt='logo' />
+            <Image className="h-8 w-auto" src='/logo.png' width={100} height={20} alt='logo' />
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
                 {navItems.map(nav => (<a href={nav.route} className={nav.className} key={nav.label}>{nav.label}</a>))}
