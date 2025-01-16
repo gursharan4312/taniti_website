@@ -1,23 +1,24 @@
 "use client"
 
 import { useState } from 'react';
-import { accomodations,transportation } from '../data.js'
+import { accomodations, transportation, tours } from '../data.js'
 import Link from 'next/link.js';
 
 function getRandomValues(type, numValues) {
 let arr = accomodations;
   if(type==='accomodations') arr = accomodations;
   else if (type==='transportation') arr = transportation;
+  else if (type==='tours') arr = tours;
 
   if (numValues > arr.length) {
     throw new Error("The number of values to select cannot exceed the array length.");
   }
 
   return arr
-    .map(value => ({ value, sort: Math.random() })) // Assign a random sort key
-    .sort((a, b) => a.sort - b.sort)                // Sort by the random key
-    .slice(0, numValues)                            // Take the first `numValues` items
-    .map(item => item.value);                       // Extract the original values
+    .map(value => ({ value, sort: Math.random() })) 
+    .sort((a, b) => a.sort - b.sort)                
+    .slice(0, numValues)                            
+    .map(item => item.value);                       
 }
 
 const Card = ({ id, placeholder, name, price, description, manager }) => {

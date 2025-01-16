@@ -22,3 +22,16 @@ export const transportation= [
   { id: '8', name: "Boing 707", price: '120/km', address: '123 random road', location: 'west', manager: "Jerry" },
   { id: '9', name: "Airjet 500", price: '130/km', address: '123 random road', location: 'west', manager: "Harminder" }
 ];
+
+
+export const tours= [
+  { id: '1', name: "Tour 1", price: '15/person', address: '123 random road', location: 'west', manager: 'Arun' },
+  { id: '2', name: "Tour 2", price: '25/perosn', address: '123 random road', location: 'west', manager: "Tom" },
+  { id: '3', name: "Tour 3", price: '5/person', address: '123 random road', location: 'west', manager: "John" },
+  { id: '4', name: "Tour 4", price: '200/person', address: '123 random road', location: 'west', manager: 'Doe' },
+  { id: '5', name: "Tour 4", price: '220/person', address: '123 random road', location: 'west', manager: "Garry" },
+  { id: '6', name: "Tour 5", price: '110/person', address: '123 random road', location: 'west', manager: "Varun" },
+  { id: '7', name: "Tour 6", price: '100/perosn', address: '123 random road', location: 'west', manager: "Magar" },
+  { id: '8', name: "Tour 7", price: '120/perosn', address: '123 random road', location: 'west', manager: "Jerry" },
+  { id: '9', name: "Tour 8", price: '130/person', address: '123 random road', location: 'west', manager: "Harminder" }
+];
