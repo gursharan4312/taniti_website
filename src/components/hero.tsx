@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link.js';
 
-const hero = () => {
+const Hero = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2">
       <div className="bg-gray-200 p-6 flex flex-col justify-between">
@@ -26,4 +26,4 @@ const hero = () => {
   );
 }
   
-export default hero
+export default Hero

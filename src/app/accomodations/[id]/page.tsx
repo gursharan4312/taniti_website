@@ -4,7 +4,7 @@ import ImageGallery from '../../../components/ImageGallery'
 import YouMayAlsoLike from '../../../components/YouMayAlsoLikeCard'
 
 const page = ({ params }: any) => {
-  const { name, category = "Hotel",  manager } = accomodations.find(item=>item.id===params.id);
+  const { name, category = "Hotel",  manager } = accomodations.find(item=>item.id===params.id) || {};
   return (
     <div>
       <section className="w-full bg-gray-300 h-64 flex flex-col justify-end items-center">

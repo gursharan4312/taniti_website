@@ -4,13 +4,12 @@ import ImageGallery from '../../../components/ImageGallery'
 import YouMayAlsoLike from '../../../components/YouMayAlsoLikeCard'
 
 const page = ({ params }: any) => {
-  const { name = "", category = "Hotel", manager = "" } = tours.find(item => item.id === params.id);
+  const { name = "", manager = "" } = tours.find(item => item.id === params.id) || {};
   return (
     <div>
       <section className="w-full bg-gray-300 h-64 flex flex-col justify-end items-center">
         <div className="p-8">
           <h2 className="text-4xl text-white font-bold">{name}</h2>
-          <p className="text-white uppercase">{category}</p>
         </div>
       </section>
       <section className="px-8 py-6 w-4/5 mx-auto">
