@@ -26,13 +26,13 @@ export default function ImageGallery({manager}:any) {
           <p className="text-sm text-gray-500 mb-2">MANAGER</p>
           <p className="text-gray-700 mb-4">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 
+            Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 
             1500s, when an unknown printer took a galley of type and scrambled it 
             to make a type specimen book.
           </p>
           <p className="text-gray-700">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.
           </p>
         </div>
       </div>

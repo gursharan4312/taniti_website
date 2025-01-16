@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import { accomodations, transportation, tours } from '../data.js'
 import Link from 'next/link.js';
 
@@ -21,7 +21,7 @@ let arr = accomodations;
     .map(item => item.value);                       
 }
 
-const Card = ({ id, placeholder, name, price, description, manager }) => {
+const Card = ({ id, placeholder, name, price, manager }) => {
   return (
     <Link href={`./${id}`} className="bg-gray-200">
       <div className="h-32 bg-gray-300 flex items-center justify-center mb-2">
@@ -42,8 +42,11 @@ const Card = ({ id, placeholder, name, price, description, manager }) => {
 }
 
 export default function YouMayAlsoLike({type}) {
+  const [items, setItems] = useState([]);
+  useEffect(()=>{
+      setItems(getRandomValues(type, 4))
+  },[])
 
-  const [items, _] = useState(getRandomValues(type, 4));
   return (
     <section className="px-8 py-8">
       <hr className="my-6" />
