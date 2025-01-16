@@ -2,10 +2,10 @@
 import React, { useState } from 'react'
 import { faqs } from '../../data'
 
-const page = () => {
+const Page = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
-  const toggleFAQ = (index) => {
+  const toggleFAQ = (index: any) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
@@ -52,4 +52,4 @@ const page = () => {
   );
 }
 
-export default page
+export default Page
