@@ -1,5 +1,6 @@
 import Hero from '../components/hero'
 import Feedback from '../components/feedback'
+import Link from 'next/link.js';
 
 export default function Home() {
   return (
@@ -24,10 +25,10 @@ export default function Home() {
               including versions of Lorem Ipsum.
             </p>
 
-            <a href="#"
+            <Link href="/tours"
               className="text-grey-500 mt-4 uppercase inline-block">
               View Tours
-            </a>
+            </Link>
           </div>
 
           <div className="bg-gray-50 p-8 md:w-1/3 flex flex-col items-center text-center justify-between">

@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link.js';
 
 const hero = () => {
   return (
@@ -12,13 +13,13 @@ const hero = () => {
         <div className="bg-gray-300 p-6 ">
           <h2 className="text-3xl font-serif italic text-gray-700 mb-4">Accommodation</h2>
           <p className="text-gray-600 w-4/5 my-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          <a href="#" className="text-grey-500 mt-4 uppercase inline-block">Learn More</a>
+          <Link href="/accomodations" className="text-grey-500 mt-4 uppercase inline-block">Learn More</Link>
         </div>
 
         <div className="bg-gray-400 p-6 ">
           <h2 className="text-3xl font-serif italic text-gray-700 mb-4">Transportation</h2>
           <p className="text-gray-600 w-4/5 my-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          <a href="#" className="text-grey-500 mt-4 uppercase inline-block">Learn More</a>
+          <Link href="/transportation" className="text-grey-500 mt-4 uppercase inline-block">Learn More</Link>
         </div>
       </div>
     </div>
