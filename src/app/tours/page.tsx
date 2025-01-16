@@ -4,7 +4,7 @@ import { tours } from '../../data';
 
 const Tours = () => {
   return (
-    <div className="min-h-screen flex flex-col font-sans">
+    <div className="flex flex-col font-sans">
       <div className="w-full h-64 bg-gray-300 flex flex-col items-center justify-end pb-10">
         <h1 className="text-3xl md:text-5xl font-semibold text-gray-700">
           Transporation

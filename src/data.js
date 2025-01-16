@@ -35,3 +35,34 @@ export const tours= [
   { id: '8', name: "Tour 7", price: '120/perosn', address: '123 random road', location: 'west', manager: "Jerry" },
   { id: '9', name: "Tour 8", price: '130/person', address: '123 random road', location: 'west', manager: "Harminder" }
 ];
+
+
+export const faqs = [
+    {
+      question: "What is Lorem Ipsum?",
+      answer: `Lorem Ipsum is simply dummy text of the printing and typesetting 
+      industry. Lorem Ipsum has been the industry's standard dummy text 
+      ever since the 1500s.`
+    },
+    {
+      question: "Why do we use it?",
+      answer: `It is a long established fact that a reader will be distracted 
+      by the readable content of a page when looking at its layout.`
+    },
+    {
+      question: "Where can I get some?",
+      answer: `There are many variations of passages of Lorem Ipsum available, 
+      but the majority have suffered alteration in some form, by injected 
+      humour, or randomised words.`
+    },
+    {
+      question: "What is the purpose of Lorem Ipsum?",
+      answer: `Contrary to popular belief, Lorem Ipsum is not simply random 
+      text. It has roots in a piece of classical Latin literature.`
+    },
+    {
+      question: "Where does it come from?",
+      answer: `Lorem Ipsum comes from sections of “de Finibus Bonorum et Malorum” 
+      written by Cicero in 45 BC, making it over 2000 years old.`
+    }
+  ];
