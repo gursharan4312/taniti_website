@@ -35,7 +35,7 @@ const navbar = () => {
             </div>
             <div className="hidden sm:block">
               <div className="flex space-x-4">
-                {navItems.map(nav => (<Link href={nav.route} className={nav.className} key={nav.label}>{nav.label}</Link>))}
+                {navItems.map(nav => (<Link href={nav.route} className={nav.className} key={nav.label} replace>{nav.label}</Link>))}
               </div>
             </div>
           </div>
