@@ -1,27 +1,27 @@
 "use client"
 
-import { useState,useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { accomodations, transportation, tours } from '../data.js'
 import Link from 'next/link.js';
 
-function getRandomValues(type, numValues) {
-let arr = accomodations;
-  if(type==='accomodations') arr = accomodations;
-  else if (type==='transportation') arr = transportation;
-  else if (type==='tours') arr = tours;
+function getRandomValues(type: string, numValues: number) {
+  let arr: any = accomodations;
+  if (type === 'accomodations') arr = accomodations;
+  else if (type === 'transportation') arr = transportation;
+  else if (type === 'tours') arr = tours;
 
   if (numValues > arr.length) {
     throw new Error("The number of values to select cannot exceed the array length.");
   }
 
   return arr
-    .map(value => ({ value, sort: Math.random() })) 
-    .sort((a, b) => a.sort - b.sort)                
-    .slice(0, numValues)                            
-    .map(item => item.value);                       
+    .map((value: any) => ({ value, sort: Math.random() }))
+    .sort((a: any, b: any) => a.sort - b.sort)
+    .slice(0, numValues)
+    .map((item: any) => item.value);
 }
 
-const Card = ({ id, placeholder, name, price, manager }) => {
+const Card = ({ id, placeholder, name, price, manager }: any) => {
   return (
     <Link href={`./${id}`} className="bg-gray-200">
       <div className="h-32 bg-gray-300 flex items-center justify-center mb-2">
@@ -41,11 +41,11 @@ const Card = ({ id, placeholder, name, price, manager }) => {
   )
 }
 
-export default function YouMayAlsoLike({type}) {
+export default function YouMayAlsoLike({ type }: any) {
   const [items, setItems] = useState([]);
-  useEffect(()=>{
-      setItems(getRandomValues(type, 4))
-  },[])
+  useEffect(() => {
+    setItems(getRandomValues(type, 4))
+  }, [type])
 
   return (
     <section className="px-8 py-8">
