@@ -60,9 +60,9 @@ export default function Home() {
         </div>
       </section>
       <section className="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-        <Feedback />
-        <Feedback />
-        <Feedback />
+        <Feedback imageUrl='/images/tour.jpg' />
+        <Feedback imageUrl='/images/tour2.jpg' />
+        <Feedback imageUrl='/images/tour3.jpg' />
       </section>
     </div>
   );
