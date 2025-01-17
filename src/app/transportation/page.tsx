@@ -57,8 +57,8 @@ const Transportations = () => {
 
         <div className="w-full md:w-3/4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {transportation.map(({ id, name, address, location, price }, i) => (
-              <Card key={i} href={`transportation/${id} `} name={name} address={address} location={location} price={price} />
+            {transportation.map(({ id, name, address, location, price, imageUrl }, i) => (
+              <Card key={i} href={`transportation/${id} `} name={name} address={address} location={location} price={price} imageUrl={imageUrl} />
             ))}
           </div>
 

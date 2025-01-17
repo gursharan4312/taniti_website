@@ -1,17 +1,16 @@
 import React from 'react'
-import { tours } from '../../../data'
-import ImageGallery from '../../../components/ImageGallery'
-import YouMayAlsoLike from '../../../components/YouMayAlsoLikeCard'
+import { tours } from '@/data'
+import ImageGallery from '@/components/ImageGallery'
+import YouMayAlsoLike from '@/components/YouMayAlsoLikeCard'
+import PageHeader from '@/components/pageHeader'
 
-const page = ({ params }: any) => {
-  const { name = "", manager = "" } = tours.find(item => item.id === params.id) || {};
+const page = async ({ params }: any) => {
+  const { id } = await params;
+  const { name = "", manager = "", imageUrl } = tours.find(item => item.id === id) || {};
   return (
     <div>
-      <section className="w-full bg-gray-300 h-64 flex flex-col justify-end items-center">
-        <div className="p-8">
-          <h2 className="text-4xl text-white font-bold">{name}</h2>
-        </div>
-      </section>
+
+      <PageHeader name={name} imageUrl={imageUrl} />
       <section className="px-8 py-6 w-4/5 mx-auto">
         <p className="text-gray-700 mb-4 text-center">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -24,7 +23,7 @@ const page = ({ params }: any) => {
           like Aldus PageMaker including versions of Lorem Ipsum.
         </p>
       </section>
-      <ImageGallery manager={manager} />
+      <ImageGallery manager={manager} type="tours" />
       <section className="px-8 py-6">
         <p className="text-gray-700 mb-2">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.

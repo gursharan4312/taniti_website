@@ -57,8 +57,8 @@ const Tours = () => {
 
         <div className="w-full md:w-3/4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {tours.map(({ id, name, address, location, price }, i) => (
-              <Card key={i} href={`tours/${id} `} name={name} address={address} location={location} price={price} />
+            {tours.map(({ id, name, address, location, price, imageUrl }, i) => (
+              <Card key={i} href={`tours/${id} `} name={name} address={address} location={location} price={price} imageUrl={imageUrl} />
             ))}
           </div>
 

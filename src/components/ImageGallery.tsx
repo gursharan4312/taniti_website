@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { accomodations, transportation, tours } from '../data.js'
 import { getRandomValues } from "./YouMayAlsoLikeCard";
 
 
@@ -15,14 +14,9 @@ export default function ImageGallery({ manager, type }: any) {
   };
 
   useEffect(() => {
-    let arr: any = accomodations;
-    if (type === 'accomodations') arr = accomodations;
-    else if (type === 'transportation') arr = transportation;
-    else if (type === 'tours') arr = tours;
-
-    arr = getRandomValues(arr, arr.length);
+    const arr = getRandomValues(type, 5);
     setImages(arr.map((item: any) => ({ src: item.imageUrl, alt: item.name })))
-  }, [])
+  }, [type])
 
   return (
     <>

@@ -1,18 +1,15 @@
 import React from 'react'
-import { accomodations } from '../../../data'
-import ImageGallery from '../../../components/ImageGallery'
-import YouMayAlsoLike from '../../../components/YouMayAlsoLikeCard'
+import { accomodations } from '@/data'
+import ImageGallery from '@/components/ImageGallery'
+import YouMayAlsoLike from '@/components/YouMayAlsoLikeCard'
+import PageHeader from '@/components/pageHeader'
 
-const page = ({ params }: any) => {
-  const { name, manager, imageUrl } = accomodations.find(item => item.id === params.id) || {};
+const page = async ({ params }: any) => {
+  const { id } = await params;
+  const { name, manager, imageUrl } = accomodations.find(item => item.id === id) || {};
   return (
     <div>
-      <section className="relative w-full bg-gray-300 h-64 flex flex-col justify-end items-center bg-no-repeat bg-center bg-cover" style={{ backgroundImage: `url(${imageUrl})` }}>
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="p-8">
-          <h2 className="text-4xl bold italic font-serif text-white leading-snug z-10 relative">{name}</h2>
-        </div>
-      </section>
+      <PageHeader name={name} imageUrl={imageUrl} />
       <section className="px-8 py-6 w-4/5 mx-auto">
         <p className="text-gray-700 mb-4 text-center">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
