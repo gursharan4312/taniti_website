@@ -3,8 +3,9 @@
 import { useState, useEffect } from 'react';
 import { accomodations, transportation, tours } from '../data.js'
 import Link from 'next/link.js';
+import Image from 'next/image.js';
 
-function getRandomValues(type: string, numValues: number) {
+export function getRandomValues(type: string, numValues: number) {
   let arr: any = accomodations;
   if (type === 'accomodations') arr = accomodations;
   else if (type === 'transportation') arr = transportation;
@@ -21,11 +22,19 @@ function getRandomValues(type: string, numValues: number) {
     .map((item: any) => item.value);
 }
 
-const Card = ({ id, placeholder, name, price, manager }: any) => {
+const Card = ({ id, placeholder, name, price, manager, imageUrl }: any) => {
   return (
     <Link href={`./${id}`} className="bg-gray-200">
       <div className="h-32 bg-gray-300 flex items-center justify-center mb-2">
-        <span className="text-gray-500">{placeholder}</span>
+        {imageUrl ? (<Image
+          src={imageUrl}
+          alt={name}
+          className="w-full h-full object-cover"
+          width={400}
+          height={400}
+        />) : (
+          <span className="text-gray-500">{placeholder}</span>
+        )}
       </div>
       <div className="p-4">
         <h3 className="text-gray-700 font-semibold">
@@ -52,7 +61,7 @@ export default function YouMayAlsoLike({ type }: any) {
       <hr className="my-6" />
       <h2 className="text-2xl font-bold mb-6 text-center">You may also like</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-6">
-        {items.map(({ id, name, price, placeholder, description, manager }) =>
+        {items.map(({ id, name, price, placeholder, description, manager, imageUrl }) =>
           <Card
             key={id}
             id={id}
@@ -61,6 +70,7 @@ export default function YouMayAlsoLike({ type }: any) {
             price={price}
             description={description}
             manager={manager}
+            imageUrl={imageUrl}
           />)}
       </div>
       <button className="border border-gray-500 px-4 py-2 text-gray-700 hover:bg-gray-100  mx-auto">
