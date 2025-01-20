@@ -16,9 +16,7 @@ export default function Home() {
             <h2 className="relative text-3xl font-serif italic text-white mb-4">Tours</h2>
 
             <p className="text-white z-10 leading-relaxed mb-4">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-              Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,
-              when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              Discover the true essence of Taniti by venturing beyond its renowned beaches. Wander through the picturesque streets of Taniti City or soak in the tranquility of Yellow Leaf Bay—each spot has its own unique tale to tell. Whether you&apos;re trekking through vibrant rainforests, exploring the island by boat, or standing in awe at the rim of an active volcano, Taniti&apos;s breathtaking scenery will captivate you. Explore the guide below to uncover the must-visit destinations that will make your journey truly unforgettable.
             </p>
 
             <p className="text-white z-10 leading-relaxed mb-4">
