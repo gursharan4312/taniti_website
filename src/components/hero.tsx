@@ -16,7 +16,7 @@ const Hero = () => {
           style={{ backgroundImage: `url("/images/hotel4.jpg")` }}>
           <div className="absolute inset-0 bg-black opacity-50 "></div>
           <h2 className="relative text-3xl font-serif italic text-white mb-4 z-10">Accommodation</h2>
-          <p className="relative text-white w-4/5 my-5 z-10">Taniti provide various accomodation options from 5 star hotels, airbnbs, motels and more for everyone&apos;s needs</p>
+          <p className="relative text-white w-4/5 my-5 z-10">Taniti offers a wide range of accommodation options to suit every traveler&apos;s preferences and budget. From luxurious 5-star resorts with world-class amenities to cozy Airbnbs and budget-friendly motels, there&apos;s something for everyone. For those seeking a unique experience, consider staying in traditional island bungalows or eco-friendly lodges nestled in the lush rainforest. Families will appreciate spacious vacation rentals, while backpackers can opt for affordable hostels or camping sites. Whether you’re looking for indulgence, comfort, or adventure, Taniti has the perfect place to call home during your stay.</p>
           <Link href="/accomodations" className="relative text-white mt-4 uppercase inline-block">Learn More</Link>
         </div>
 
