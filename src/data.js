@@ -39,30 +39,33 @@ export const tours = [
 
 export const faqs = [
   {
-    question: "What is Lorem Ipsum?",
-    answer: `Lorem Ipsum is simply dummy text of the printing and typesetting 
-      industry. Lorem Ipsum has been the industry's standard dummy text 
-      ever since the 1500s.`
+    question: "What is the drinking age?",
+    answer: `The drinking age on Taniti is 18 and the drinking age is not strictly enforced.`
   },
   {
-    question: "Why do we use it?",
-    answer: `It is a long established fact that a reader will be distracted 
-      by the readable content of a page when looking at its layout.`
+    question: "What time alcohol be purchased?",
+    answer: `Alcohol is not allowed to be served or sold between the hours of midnight and 9:00 a.m.`
   },
   {
-    question: "Where can I get some?",
-    answer: `There are many variations of passages of Lorem Ipsum available, 
-      but the majority have suffered alteration in some form, by injected 
-      humour, or randomised words.`
+    question: "What is the voltage for the power outlets?",
+    answer: `Power outlets are 120 volts (the same as in the United States/Canada).
+`
   },
   {
-    question: "What is the purpose of Lorem Ipsum?",
-    answer: `Contrary to popular belief, Lorem Ipsum is not simply random 
-      text. It has roots in a piece of classical Latin literature.`
+    question: "What currency is used in Taniti?",
+    answer: `Taniti uses the U.S.dollar as its currency, but many businesses will also accept euros and yen.Several banks facilitate currency exchange, and many businesses accept major credit cards.`
   },
   {
-    question: "Where does it come from?",
-    answer: `Lorem Ipsum comes from sections of “de Finibus Bonorum et Malorum” 
-      written by Cicero in 45 BC, making it over 2000 years old.`
+    question: "Is Taniti open on holidays?",
+    answer: `Taniti enjoys a large number of national holidays, and many tourist attractions and restaurants will be closed on holidays, so visitors should plan accordingly.`
+  },
+  {
+    question: "Are there hospitals/clinics at Taniti?",
+    answer: `There is one hospital and several clinics. The hospital has many multilingual employees.`
+  },
+  {
+    question: "Do resifents speak English?",
+    answer: `Many younger Tanitians speak fluent English. Very little English is spoken in rural areas, especially by the older residents.`
   }
 ];
+
