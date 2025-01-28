@@ -22,7 +22,7 @@ const Hero = () => {
 
         <div className="relative bg-gray-400 p-6 bg-no-repeat bg-center bg-cover"
           style={{ backgroundImage: `url("/images/plane2.jpg")` }}>
-          <div className="absolute inset-0 bg-black opacity-50 "></div>
+          <div className="absolute inset-0 bg-black opacity-80 "></div>
           <h2 className="relative text-3xl font-serif italic text-white mb-4 z-10">Transportation</h2>
           <p className="relative text-white w-4/5 my-5 z-10">Reaching Taniti and exploring the island is a breeze, thanks to a range of transportation options catering to every traveler. Whether you arrive by air or sea, your adventure kicks off the moment you set foot on the island. Once there, immerse yourself in Taniti&apos;s charm—from the vibrant streets of Taniti City to its serene beaches and verdant rainforests. With accessible options like public buses, rental bikes, and taxis, you can uncover Taniti&apos;s treasures at your own pace. Everything you need to navigate the island is right here.</p>
           <Link href="/transportation" className="relative text-white mt-4 uppercase inline-block z-10">Learn More</Link>
