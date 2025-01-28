@@ -64,7 +64,7 @@ export const faqs = [
     answer: `There is one hospital and several clinics. The hospital has many multilingual employees.`
   },
   {
-    question: "Do resifents speak English?",
+    question: "Do residents speak English?",
     answer: `Many younger Tanitians speak fluent English. Very little English is spoken in rural areas, especially by the older residents.`
   }
 ];
